@@ -1,14 +1,20 @@
 {
-  "profileName": "Hermes Copy-Trade Watch",
+  "profileName": "Hermes G2hak Copy-Trade Watch",
   "network": "mainnet-beta",
   "rpcUrl": "https://api.mainnet-beta.solana.com",
   "priceUrl": "https://lite-api.jup.ag/price/v3",
-  "designatedAddress": "11111111111111111111111111111111",
+  "designatedAddress": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
   "wallets": [
     {
-      "label": "Hermes Primary",
-      "address": "11111111111111111111111111111111",
+      "label": "Hermes watched source",
+      "address": "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
       "role": "source",
+      "weight": 1
+    },
+    {
+      "label": "Hermes trading wallet",
+      "address": "2oVttN9jEjLnLvWs7oHW4x9MxXK52X9hcPRkhqWKm5MF",
+      "role": "execution",
       "weight": 1
     }
   ],
@@ -22,11 +28,22 @@
       "symbol": "USDC",
       "name": "USD Coin",
       "decimals": 6
+    },
+    "Es9vMFrzaCERmJfrF4H2FYD4V57LnS3rE7vmYhA64cnC": {
+      "symbol": "USDT",
+      "name": "Tether USD",
+      "decimals": 6
     }
   },
   "metadata": {
     "operator": "Clawberto",
     "strategy": "Hermes observed token routing",
-    "notes": "Copy this file to config/wallets.json and replace the Hermes and destination addresses before running live scans."
+    "trigger": "new copytradable SPL buy by watched source wallet",
+    "minimumSourceBuyUsd": 500,
+    "mirrorBuyUsd": 1,
+    "slippageBps": 1500,
+    "priorityFeeLamportsMax": 100000,
+    "maxEventsPerRun": 5,
+    "notes": "Copy this file to config/wallets.json and adjust only if the active Hermes rail changes."
   }
 }

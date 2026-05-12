@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "profileName": "Hermes Copy-Trade Watch",
+  "profileName": "Hermes G2hak Copy-Trade Watch",
   "network": "mainnet-beta",
-  "designatedAddress": "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ",
+  "designatedAddress": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
   "generatedAt": "2026-05-12T10:40:00.000Z",
   "processedSignatures": [
     "4M9xDemoRouteSignature111111111111111111111111111111111111111"
   ],
   "wallets": {
-    "H3rm3s1111111111111111111111111111111111111": {
-      "address": "H3rm3s1111111111111111111111111111111111111",
-      "label": "Hermes Primary",
+    "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b": {
+      "address": "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
+      "label": "Hermes watched source",
       "role": "source",
       "currentValueUsd": 28412.44,
       "estimatedPnlUsd": 2148.33,
@@ -30,8 +30,8 @@
         }
       }
     },
-    "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ": {
-      "address": "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ",
+    "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6": {
+      "address": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
       "label": "Designated destination",
       "role": "destination",
       "currentValueUsd": 8421.16,
@@ -106,14 +106,14 @@
       "accountCount": 17,
       "instructionCount": 5,
       "watchedTouches": [
-        "H3rm3s1111111111111111111111111111111111111",
-        "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ"
+        "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
+        "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6"
       ],
       "routedTransfers": [
         {
           "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
-          "from": "H3rm3s1111111111111111111111111111111111111",
-          "to": "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ",
+          "from": "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
+          "to": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
           "amount": 8400,
           "decimals": 6
         }
@@ -121,20 +121,20 @@
       "transfers": [
         {
           "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
-          "from": "H3rm3s1111111111111111111111111111111111111",
-          "to": "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ",
+          "from": "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
+          "to": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
           "amount": 8400,
           "decimals": 6
         }
       ],
       "involvedWallets": [
         {
-          "address": "H3rm3s1111111111111111111111111111111111111",
-          "label": "Hermes Primary",
+          "address": "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
+          "label": "Hermes watched source",
           "role": "source"
         },
         {
-          "address": "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ",
+          "address": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
           "label": "Designated destination",
           "role": "destination"
         }
@@ -160,13 +160,13 @@
     "estimatedPnlUsd": 2757.07
   },
   "config": {
-    "profileName": "Hermes Copy-Trade Watch",
+    "profileName": "Hermes G2hak Copy-Trade Watch",
     "network": "mainnet-beta",
-    "designatedAddress": "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ",
+    "designatedAddress": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
     "wallets": [
       {
-        "label": "Hermes Primary",
-        "address": "H3rm3s1111111111111111111111111111111111111",
+        "label": "Hermes watched source",
+        "address": "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
         "role": "source",
         "weight": 1
       }

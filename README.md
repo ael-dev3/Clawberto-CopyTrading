@@ -21,7 +21,13 @@ PnL is an estimate, not accounting-grade reporting. It treats observed receives 
 Copy-Item config/wallets.example.json config/wallets.json
 ```
 
-Edit `config/wallets.json`:
+The checked-in example is prefilled from `docs/active-copytrade-parameters.json`:
+
+- Watched source wallet: `G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b`
+- Trading wallet: `2oVttN9jEjLnLvWs7oHW4x9MxXK52X9hcPRkhqWKm5MF`
+- Destination wallet: `GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6`
+
+Edit `config/wallets.json` if the active rail changes:
 
 - Set `designatedAddress` to the wallet receiving Hermes-routed tokens.
 - Add every Hermes/source wallet under `wallets`.
@@ -58,9 +64,10 @@ Local static preview:
 
 ```powershell
 npm run build
+npm run serve
 ```
 
-Then open `docs/index.html`.
+Then open `http://127.0.0.1:4173/`.
 
 ## Notes
 

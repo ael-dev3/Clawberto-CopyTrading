@@ -11,6 +11,7 @@
     "watch": "node src/cli/watch.js",
     "snapshot": "node src/cli/watch.js --once",
     "build": "node scripts/build-site.js",
+    "serve": "node scripts/serve-site.js",
     "test": "node --test"
   },
   "engines": {

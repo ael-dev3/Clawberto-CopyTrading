@@ -12,6 +12,8 @@ const els = {
   focusCa: document.querySelector("#focus-ca"),
   focusCopy: document.querySelector("#focus-copy"),
   focusMeta: document.querySelector("#focus-meta"),
+  railReadiness: document.querySelector("#rail-readiness"),
+  railMeta: document.querySelector("#rail-meta"),
   routesBody: document.querySelector("#routes-body"),
   walletsBody: document.querySelector("#wallets-body"),
   tokensBody: document.querySelector("#tokens-body"),
@@ -21,11 +23,18 @@ const els = {
 
 let snapshot = null;
 let selectedMint = null;
+let activeParams = null;
 
 async function loadSnapshot() {
-  const response = await fetch(`data/snapshot.json?ts=${Date.now()}`, { cache: "no-store" });
-  if (!response.ok) throw new Error(`Snapshot HTTP ${response.status}`);
-  snapshot = await response.json();
+  const cacheBust = Date.now();
+  const [snapshotResponse, paramsResponse] = await Promise.all([
+    fetch(`data/snapshot.json?ts=${cacheBust}`, { cache: "no-store" }),
+    fetch(`active-copytrade-parameters.json?ts=${cacheBust}`, { cache: "no-store" }).catch(() => null)
+  ]);
+
+  if (!snapshotResponse.ok) throw new Error(`Snapshot HTTP ${snapshotResponse.status}`);
+  snapshot = await snapshotResponse.json();
+  activeParams = paramsResponse?.ok ? await paramsResponse.json() : null;
   selectedMint ||= Object.keys(snapshot.tokens ?? {})[0] ?? null;
   render();
 }
@@ -43,10 +52,46 @@ function render() {
   els.workflowLedger.textContent = usd(stats.estimatedPnlUsd);
 
   renderFocus();
+  renderRailMeta();
   renderRoutes();
   renderWallets();
   renderTokens();
   renderEvents();
+}
+
+function renderRailMeta() {
+  const params = activeParams ?? {};
+  const wallets = params.wallets ?? {};
+  const copyRule = params.copy_rule ?? {};
+  const cron = params.cron_job ?? {};
+  const live = params.live_state ?? {};
+  const funding = params.funding ?? {};
+  const readiness = params.snapshot?.readiness ?? "Snapshot";
+
+  els.railReadiness.textContent = readiness;
+  els.railMeta.innerHTML = [
+    railItem("Watched source", addressCell(wallets.watched_source_wallet ?? snapshot.config?.wallets?.[0]?.address)),
+    railItem("Trading wallet", addressCell(wallets.trading_wallet)),
+    railItem("Destination", addressCell(wallets.destination_wallet ?? snapshot.designatedAddress)),
+    railItem("Trigger", `${usd(copyRule.minimum_source_buy_usd)} source buy`),
+    railItem("Mirror size", `${usd(copyRule.mirror_buy_usd)} using SOL`),
+    railItem("Slippage", `${copyRule.slippage_bps ?? "-"} bps`),
+    railItem("Cron", `${cron.enabled ? "enabled" : "unknown"} / ${cron.schedule ?? "-"}`),
+    railItem("Last run", cron.last_run_at ? formatDate(cron.last_run_at) : "-"),
+    railItem("Cursor", addressCell(live.state_latest_signature)),
+    railItem("Trading SOL", `${amount(funding.trading_wallet_sol)} SOL`),
+    railItem("Readiness gates", readinessGateCount(params.readiness_gates)),
+    railItem("State", live.lock_exists ? "lock active" : "no active lock")
+  ].join("");
+}
+
+function railItem(label, value) {
+  return `
+    <div class="rail-item">
+      <span>${escapeHtml(label)}</span>
+      <strong>${value ?? "-"}</strong>
+    </div>
+  `;
 }
 
 function renderFocus() {
@@ -73,6 +118,13 @@ function renderFocus() {
     ["Volume", amount(token.absoluteVolume)],
     ["Last seen", token.lastObservedAt ? formatDate(token.lastObservedAt) : "-"]
   ]);
+}
+
+function readinessGateCount(gates) {
+  const values = Object.values(gates ?? {});
+  if (!values.length) return "-";
+  const passing = values.filter(Boolean).length;
+  return `${passing}/${values.length} passing`;
 }
 
 function renderRoutes() {
@@ -210,13 +262,15 @@ function moneyClass(value) {
 }
 
 function formatDate(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return String(value ?? "-");
   return new Intl.DateTimeFormat("en-US", {
     month: "short",
     day: "2-digit",
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit"
-  }).format(new Date(value));
+  }).format(date);
 }
 
 function showToast(message) {

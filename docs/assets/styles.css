@@ -367,6 +367,35 @@ code {
   overflow-wrap: anywhere;
 }
 
+.rail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.rail-item {
+  min-height: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f9faf7;
+}
+
+.rail-item span {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 760;
+  text-transform: uppercase;
+}
+
+.rail-item strong {
+  overflow-wrap: anywhere;
+}
+
 .data-section {
   margin-bottom: 18px;
 }
@@ -496,7 +525,8 @@ tbody tr:hover {
 
 @media (max-width: 1100px) {
   .metric-grid,
-  .split-section {
+  .split-section,
+  .rail-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -547,7 +577,8 @@ tbody tr:hover {
   }
 
   .metric-grid,
-  .split-section {
+  .split-section,
+  .rail-grid {
     grid-template-columns: 1fr;
   }
 
