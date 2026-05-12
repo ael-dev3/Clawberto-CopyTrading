@@ -3,30 +3,184 @@
   "profileName": "Hermes G2hak Copy-Trade Watch",
   "network": "mainnet-beta",
   "designatedAddress": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
-  "generatedAt": "2026-05-12T10:40:00.000Z",
+  "generatedAt": "2026-05-12T12:41:47.331Z",
   "processedSignatures": [
-    "4M9xDemoRouteSignature111111111111111111111111111111111111111"
+    "5gFhNmL4obfTWv1BS6BRs8dZvbh9FW19HvefkyNuXecmQ5z4So184sqDHPGeKeQpJD8gbEMTcGyFZTEPkyEUDahY",
+    "4LFAALc2nYjtRoA6eJy1YTJnEBJRjFGo7qF3UU9X4LP7MaHG41R6ZpsVp6mku9FiyJ5bFSPACqwQtoQFnszuWyD6",
+    "TQNaiPV2PhbH1yDSsX6jAqEBVEXvGMQKR8SEsXDd3YQrg9u2jGn8aubwvUnj2smqaSfceKYyY12PBimQELeNUzM",
+    "2bUBnHp8jbmbbJgF2qWe3VkpTvCgJoHAQdMuBo6VS4UBhtAetvVVtCTEXD1GkDVbTRUCVKfzvRi1cQknUPA3FtJR",
+    "49fy7RNRkJ5iGWeJ3r6XALDxjVx6kK7hqsUwQaFDaugdnysXDhB5QEw27tHtzdaCnUFzfMXrWKVkUejXVpiGwnqT",
+    "3yZBgPZ5qhNiMTm9kyCH4A2m4eKzrsDErCvBARktXurdDQvSRziunefL4Kt5SYQ6CShBz5L2ZdPV4RYYBX9FRLAx"
   ],
   "wallets": {
+    "J61CGf5UEWVYvqtkejcnVrEzggbQpEeevVFpm6LEQJaS": {
+      "address": "J61CGf5UEWVYvqtkejcnVrEzggbQpEeevVFpm6LEQJaS",
+      "label": "J61CGf5UEWVYvqtkejcnVrEzggbQpEeevVFpm6LEQJaS",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "2oVttN9jEjLnLvWs7oHW4x9MxXK52X9hcPRkhqWKm5MF": {
+      "address": "2oVttN9jEjLnLvWs7oHW4x9MxXK52X9hcPRkhqWKm5MF",
+      "label": "Hermes trading wallet",
+      "role": "execution",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "J61CuKipaubJVrGgtNfgz9u4vnV5oUqy3SetsB1DiJaS": {
+      "address": "J61CuKipaubJVrGgtNfgz9u4vnV5oUqy3SetsB1DiJaS",
+      "label": "J61CuKipaubJVrGgtNfgz9u4vnV5oUqy3SetsB1DiJaS",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "DWUCPCnnES9AB6HbTgG8rpFGqUXvuebnbrBuNav2Etwv": {
+      "address": "DWUCPCnnES9AB6HbTgG8rpFGqUXvuebnbrBuNav2Etwv",
+      "label": "DWUCPCnnES9AB6HbTgG8rpFGqUXvuebnbrBuNav2Etwv",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
     "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b": {
       "address": "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
       "label": "Hermes watched source",
       "role": "source",
-      "currentValueUsd": 28412.44,
-      "estimatedPnlUsd": 2148.33,
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "DW11A3YyjJ7MHQphnunbHMnCstehY3LdbJmVnwMTLtwv": {
+      "address": "DW11A3YyjJ7MHQphnunbHMnCstehY3LdbJmVnwMTLtwv",
+      "label": "DW11A3YyjJ7MHQphnunbHMnCstehY3LdbJmVnwMTLtwv",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "7KUPnbQabcF8wsuNwEjjP6mScemy8csQC6U255jEL3TM": {
+      "address": "7KUPnbQabcF8wsuNwEjjP6mScemy8csQC6U255jEL3TM",
+      "label": "7KUPnbQabcF8wsuNwEjjP6mScemy8csQC6U255jEL3TM",
+      "role": "observed",
+      "currentValueUsd": 0.00289979,
+      "estimatedPnlUsd": 0,
       "positions": {
-        "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN": {
-          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
-          "symbol": "JUP",
-          "name": "Jupiter",
-          "quantity": 42800,
-          "costBasisUsd": 15224.4,
-          "realizedPnlUsd": 411.2,
-          "unrealizedPnlUsd": 1742.52,
-          "totalPnlUsd": 2153.72,
-          "valueUsd": 16966.92,
-          "usdPrice": 0.396423,
-          "lastPriceBlockId": 348004026
+        "So11111111111111111111111111111111111111112": {
+          "mint": "So11111111111111111111111111111111111111112",
+          "symbol": "SOL",
+          "name": "Wrapped SOL",
+          "quantity": 0.00003037,
+          "costBasisUsd": 0.00289979,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "valueUsd": 0.00289979,
+          "usdPrice": 95.48190170183675,
+          "lastPriceBlockId": 419256885
+        }
+      }
+    },
+    "FWsW1xNtWscwNmKv6wVsU1iTzRN6wmmk3MjxRP5tT7hz": {
+      "address": "FWsW1xNtWscwNmKv6wVsU1iTzRN6wmmk3MjxRP5tT7hz",
+      "label": "FWsW1xNtWscwNmKv6wVsU1iTzRN6wmmk3MjxRP5tT7hz",
+      "role": "observed",
+      "currentValueUsd": 0.00449433,
+      "estimatedPnlUsd": -2.9e-7,
+      "positions": {
+        "So11111111111111111111111111111111111111112": {
+          "mint": "So11111111111111111111111111111111111111112",
+          "symbol": "SOL",
+          "name": "Wrapped SOL",
+          "quantity": 0.00004707,
+          "costBasisUsd": 0.00449462,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -2.9e-7,
+          "totalPnlUsd": -2.9e-7,
+          "valueUsd": 0.00449433,
+          "usdPrice": 95.48190170183675,
+          "lastPriceBlockId": 419256885
+        }
+      }
+    },
+    "3CgvbiM3op4vjrrjH2zcrQUwsqh5veNVRjFCB9N6sRoD": {
+      "address": "3CgvbiM3op4vjrrjH2zcrQUwsqh5veNVRjFCB9N6sRoD",
+      "label": "3CgvbiM3op4vjrrjH2zcrQUwsqh5veNVRjFCB9N6sRoD",
+      "role": "observed",
+      "currentValueUsd": 0.00097964,
+      "estimatedPnlUsd": 0,
+      "positions": {
+        "So11111111111111111111111111111111111111112": {
+          "mint": "So11111111111111111111111111111111111111112",
+          "symbol": "SOL",
+          "name": "Wrapped SOL",
+          "quantity": 0.00001026,
+          "costBasisUsd": 0.00097964,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "valueUsd": 0.00097964,
+          "usdPrice": 95.48190170183675,
+          "lastPriceBlockId": 419256885
+        }
+      }
+    },
+    "78wSYbXvREWu78D814FQBkymcrpTdMxvd7wavsLDwt4Y": {
+      "address": "78wSYbXvREWu78D814FQBkymcrpTdMxvd7wavsLDwt4Y",
+      "label": "78wSYbXvREWu78D814FQBkymcrpTdMxvd7wavsLDwt4Y",
+      "role": "observed",
+      "currentValueUsd": 0.4801241,
+      "estimatedPnlUsd": -3.8e-7,
+      "positions": {
+        "So11111111111111111111111111111111111111112": {
+          "mint": "So11111111111111111111111111111111111111112",
+          "symbol": "SOL",
+          "name": "Wrapped SOL",
+          "quantity": 0.01012522,
+          "costBasisUsd": 0.96677564,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -3.8e-7,
+          "totalPnlUsd": -3.8e-7,
+          "valueUsd": 0.96677526,
+          "usdPrice": 95.48190170183675,
+          "lastPriceBlockId": 419256885
+        },
+        "9geqC8GkNVA7vHUybCAtsAQEWmxLxYABKMaaa9uspump": {
+          "mint": "9geqC8GkNVA7vHUybCAtsAQEWmxLxYABKMaaa9uspump",
+          "symbol": "9geq...pump",
+          "name": "Unknown token",
+          "quantity": -148029.924806,
+          "costBasisUsd": 0,
+          "realizedPnlUsd": 0.48665116,
+          "unrealizedPnlUsd": -0.48665116,
+          "totalPnlUsd": 0,
+          "valueUsd": -0.48665116,
+          "usdPrice": 0.000003287518807325616,
+          "lastPriceBlockId": 419254266
+        }
+      }
+    },
+    "5cjcW9wExnJJiqgLjq7DEG75Pm6JBgE1hNv4B2vHXUW6": {
+      "address": "5cjcW9wExnJJiqgLjq7DEG75Pm6JBgE1hNv4B2vHXUW6",
+      "label": "5cjcW9wExnJJiqgLjq7DEG75Pm6JBgE1hNv4B2vHXUW6",
+      "role": "observed",
+      "currentValueUsd": 0.00449433,
+      "estimatedPnlUsd": -2.9e-7,
+      "positions": {
+        "So11111111111111111111111111111111111111112": {
+          "mint": "So11111111111111111111111111111111111111112",
+          "symbol": "SOL",
+          "name": "Wrapped SOL",
+          "quantity": 0.00004707,
+          "costBasisUsd": 0.00449462,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -2.9e-7,
+          "totalPnlUsd": -2.9e-7,
+          "valueUsd": 0.00449433,
+          "usdPrice": 95.48190170183675,
+          "lastPriceBlockId": 419256885
         }
       }
     },
@@ -34,130 +188,634 @@
       "address": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
       "label": "Designated destination",
       "role": "destination",
-      "currentValueUsd": 8421.16,
-      "estimatedPnlUsd": 608.74,
+      "currentValueUsd": 0.52937986,
+      "estimatedPnlUsd": 0,
       "positions": {
-        "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN": {
-          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
-          "symbol": "JUP",
-          "name": "Jupiter",
-          "quantity": 8400,
-          "costBasisUsd": 2720.2,
-          "realizedPnlUsd": 122.14,
-          "unrealizedPnlUsd": 608.74,
-          "totalPnlUsd": 730.88,
-          "valueUsd": 3329.35,
-          "usdPrice": 0.396423,
-          "lastPriceBlockId": 348004026
+        "9geqC8GkNVA7vHUybCAtsAQEWmxLxYABKMaaa9uspump": {
+          "mint": "9geqC8GkNVA7vHUybCAtsAQEWmxLxYABKMaaa9uspump",
+          "symbol": "9geq...pump",
+          "name": "Unknown token",
+          "quantity": 148029.924806,
+          "costBasisUsd": 0.48665116,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "valueUsd": 0.48665116,
+          "usdPrice": 0.000003287518807325616,
+          "lastPriceBlockId": 419254266
+        },
+        "AFFQyU6EmFUVxeazzowdrdn48TtmeHnYNLPXqgupump": {
+          "mint": "AFFQyU6EmFUVxeazzowdrdn48TtmeHnYNLPXqgupump",
+          "symbol": "AFFQ...pump",
+          "name": "Unknown token",
+          "quantity": 15568.303427,
+          "costBasisUsd": 0.0427287,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "valueUsd": 0.0427287,
+          "usdPrice": 0.000002744595912723512,
+          "lastPriceBlockId": 419256881
         }
       }
+    },
+    "3GQvMdyh4bfbEam5i5CCui1mFsxLPomwvSeZm5H4AuqH": {
+      "address": "3GQvMdyh4bfbEam5i5CCui1mFsxLPomwvSeZm5H4AuqH",
+      "label": "3GQvMdyh4bfbEam5i5CCui1mFsxLPomwvSeZm5H4AuqH",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "7xQYoUjUJF1Kg6WVczoTAkaNhn5syQYcbvjmFrhjWpx": {
+      "address": "7xQYoUjUJF1Kg6WVczoTAkaNhn5syQYcbvjmFrhjWpx",
+      "label": "7xQYoUjUJF1Kg6WVczoTAkaNhn5syQYcbvjmFrhjWpx",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "HABjaSq1M3Dg7uJjzaLcJgeMDp6TSwyVqy7yPPPvwcav": {
+      "address": "HABjaSq1M3Dg7uJjzaLcJgeMDp6TSwyVqy7yPPPvwcav",
+      "label": "HABjaSq1M3Dg7uJjzaLcJgeMDp6TSwyVqy7yPPPvwcav",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "39FWQJxqTmUkFqHKjEs3CawQ1b1rqLcKmHfJ1FWMAWdu": {
+      "address": "39FWQJxqTmUkFqHKjEs3CawQ1b1rqLcKmHfJ1FWMAWdu",
+      "label": "39FWQJxqTmUkFqHKjEs3CawQ1b1rqLcKmHfJ1FWMAWdu",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "BnbCRhi3uNZT7cfW6qkJLXyDiQH3g31pgqzvPYaP5LmW": {
+      "address": "BnbCRhi3uNZT7cfW6qkJLXyDiQH3g31pgqzvPYaP5LmW",
+      "label": "BnbCRhi3uNZT7cfW6qkJLXyDiQH3g31pgqzvPYaP5LmW",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "GYH1Gae1wJytMSvMvw8JVcv7nuAbxi8i9erNVbERnzXd": {
+      "address": "GYH1Gae1wJytMSvMvw8JVcv7nuAbxi8i9erNVbERnzXd",
+      "label": "GYH1Gae1wJytMSvMvw8JVcv7nuAbxi8i9erNVbERnzXd",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "924ehmC4cfj3SB7GrxqpBNkB5DEnGWCX4kotoHy63VhM": {
+      "address": "924ehmC4cfj3SB7GrxqpBNkB5DEnGWCX4kotoHy63VhM",
+      "label": "924ehmC4cfj3SB7GrxqpBNkB5DEnGWCX4kotoHy63VhM",
+      "role": "observed",
+      "currentValueUsd": 0.00916913,
+      "estimatedPnlUsd": -9e-8,
+      "positions": {
+        "So11111111111111111111111111111111111111112": {
+          "mint": "So11111111111111111111111111111111111111112",
+          "symbol": "SOL",
+          "name": "Wrapped SOL",
+          "quantity": 0.00009603,
+          "costBasisUsd": 0.00916922,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -9e-8,
+          "totalPnlUsd": -9e-8,
+          "valueUsd": 0.00916913,
+          "usdPrice": 95.48190170183675,
+          "lastPriceBlockId": 419256885
+        }
+      }
+    },
+    "7VtfL8fvgNfhz17qKRMjzQEXgbdpnHHHQRh54R9jP2RJ": {
+      "address": "7VtfL8fvgNfhz17qKRMjzQEXgbdpnHHHQRh54R9jP2RJ",
+      "label": "7VtfL8fvgNfhz17qKRMjzQEXgbdpnHHHQRh54R9jP2RJ",
+      "role": "observed",
+      "currentValueUsd": 0.00024157,
+      "estimatedPnlUsd": 1.9e-7,
+      "positions": {
+        "So11111111111111111111111111111111111111112": {
+          "mint": "So11111111111111111111111111111111111111112",
+          "symbol": "SOL",
+          "name": "Wrapped SOL",
+          "quantity": 0.00000253,
+          "costBasisUsd": 0.00024138,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 1.9e-7,
+          "totalPnlUsd": 1.9e-7,
+          "valueUsd": 0.00024157,
+          "usdPrice": 95.48190170183675,
+          "lastPriceBlockId": 419256885
+        }
+      }
+    },
+    "eFNjQm47KDyBSrfxjs257cHdpE2QAayXZRJNjxtJiCK": {
+      "address": "eFNjQm47KDyBSrfxjs257cHdpE2QAayXZRJNjxtJiCK",
+      "label": "eFNjQm47KDyBSrfxjs257cHdpE2QAayXZRJNjxtJiCK",
+      "role": "observed",
+      "currentValueUsd": 0.92437597,
+      "estimatedPnlUsd": -3.9e-7,
+      "positions": {
+        "So11111111111111111111111111111111111111112": {
+          "mint": "So11111111111111111111111111111111111111112",
+          "symbol": "SOL",
+          "name": "Wrapped SOL",
+          "quantity": 0.01012867,
+          "costBasisUsd": 0.96710506,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -3.9e-7,
+          "totalPnlUsd": -3.9e-7,
+          "valueUsd": 0.96710467,
+          "usdPrice": 95.48190170183675,
+          "lastPriceBlockId": 419256885
+        },
+        "AFFQyU6EmFUVxeazzowdrdn48TtmeHnYNLPXqgupump": {
+          "mint": "AFFQyU6EmFUVxeazzowdrdn48TtmeHnYNLPXqgupump",
+          "symbol": "AFFQ...pump",
+          "name": "Unknown token",
+          "quantity": -15568.30342698,
+          "costBasisUsd": 0,
+          "realizedPnlUsd": 0.0427287,
+          "unrealizedPnlUsd": -0.0427287,
+          "totalPnlUsd": 0,
+          "valueUsd": -0.0427287,
+          "usdPrice": 0.000002744595912723512,
+          "lastPriceBlockId": 419256881
+        }
+      }
+    },
+    "GXPFM2caqTtQYC2cJ5yJRi9VDkpsYZXzYdwYpGnLmtDL": {
+      "address": "GXPFM2caqTtQYC2cJ5yJRi9VDkpsYZXzYdwYpGnLmtDL",
+      "label": "GXPFM2caqTtQYC2cJ5yJRi9VDkpsYZXzYdwYpGnLmtDL",
+      "role": "observed",
+      "currentValueUsd": 0.00024157,
+      "estimatedPnlUsd": 2.9e-7,
+      "positions": {
+        "So11111111111111111111111111111111111111112": {
+          "mint": "So11111111111111111111111111111111111111112",
+          "symbol": "SOL",
+          "name": "Wrapped SOL",
+          "quantity": 0.00000253,
+          "costBasisUsd": 0.00024128,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 2.9e-7,
+          "totalPnlUsd": 2.9e-7,
+          "valueUsd": 0.00024157,
+          "usdPrice": 95.48190170183675,
+          "lastPriceBlockId": 419256885
+        }
+      }
+    },
+    "GP8StUXNYSZjPikyRsvkTbvRV1GBxMErb59cpeCJnDf1": {
+      "address": "GP8StUXNYSZjPikyRsvkTbvRV1GBxMErb59cpeCJnDf1",
+      "label": "GP8StUXNYSZjPikyRsvkTbvRV1GBxMErb59cpeCJnDf1",
+      "role": "observed",
+      "currentValueUsd": 0.00097773,
+      "estimatedPnlUsd": 0,
+      "positions": {
+        "So11111111111111111111111111111111111111112": {
+          "mint": "So11111111111111111111111111111111111111112",
+          "symbol": "SOL",
+          "name": "Wrapped SOL",
+          "quantity": 0.00001024,
+          "costBasisUsd": 0.00097773,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "valueUsd": 0.00097773,
+          "usdPrice": 95.48190170183675,
+          "lastPriceBlockId": 419256885
+        }
+      }
+    },
+    "25mtHq2t5iesuKEMBd3hQtkJ61TjJjYGKZDY99RoYZjV": {
+      "address": "25mtHq2t5iesuKEMBd3hQtkJ61TjJjYGKZDY99RoYZjV",
+      "label": "25mtHq2t5iesuKEMBd3hQtkJ61TjJjYGKZDY99RoYZjV",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "3BA5QNW4SESCrzZCQFnwZ9VvfaXwqqwK7MjA2Jhp1LpC": {
+      "address": "3BA5QNW4SESCrzZCQFnwZ9VvfaXwqqwK7MjA2Jhp1LpC",
+      "label": "3BA5QNW4SESCrzZCQFnwZ9VvfaXwqqwK7MjA2Jhp1LpC",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "7GFUN3bWzJMKMRZ34JLsvcqdssDbXnp589SiE33KVwcC": {
+      "address": "7GFUN3bWzJMKMRZ34JLsvcqdssDbXnp589SiE33KVwcC",
+      "label": "7GFUN3bWzJMKMRZ34JLsvcqdssDbXnp589SiE33KVwcC",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "Acbw6tSNu2keg1dgPDLbUYeaZiCt1AdAyrRngwMofUr8": {
+      "address": "Acbw6tSNu2keg1dgPDLbUYeaZiCt1AdAyrRngwMofUr8",
+      "label": "Acbw6tSNu2keg1dgPDLbUYeaZiCt1AdAyrRngwMofUr8",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "AktftA98kSWAxn6kVSoqBXBELUArjKu2H9WmKB48ULFY": {
+      "address": "AktftA98kSWAxn6kVSoqBXBELUArjKu2H9WmKB48ULFY",
+      "label": "AktftA98kSWAxn6kVSoqBXBELUArjKu2H9WmKB48ULFY",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
+    },
+    "GyY4VgEpJQhiKZRAJJmoM4hv5Q2xC4pvX68MGrGidxyG": {
+      "address": "GyY4VgEpJQhiKZRAJJmoM4hv5Q2xC4pvX68MGrGidxyG",
+      "label": "GyY4VgEpJQhiKZRAJJmoM4hv5Q2xC4pvX68MGrGidxyG",
+      "role": "observed",
+      "currentValueUsd": 0,
+      "estimatedPnlUsd": 0,
+      "positions": {}
     }
   },
   "tokens": {
-    "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN": {
-      "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
-      "symbol": "JUP",
-      "name": "Jupiter",
-      "decimals": 6,
-      "netAmount": 0,
-      "absoluteVolume": 16800,
-      "usdPrice": 0.396423,
-      "priceChange24h": 0.52,
-      "priceBlockId": 348004026,
-      "lastObservedAt": "2026-05-12T10:32:11.000Z",
-      "lastSignature": "4M9xDemoRouteSignature111111111111111111111111111111111111111"
-    },
     "So11111111111111111111111111111111111111112": {
       "mint": "So11111111111111111111111111111111111111112",
       "symbol": "SOL",
       "name": "Wrapped SOL",
       "decimals": 9,
-      "netAmount": 0,
-      "absoluteVolume": 42.16,
-      "usdPrice": 147.48,
-      "priceChange24h": 1.29,
-      "priceBlockId": 348004023,
-      "lastObservedAt": "2026-05-12T10:30:18.000Z",
-      "lastSignature": "3SolDemoSignature22222222222222222222222222222222222222222"
+      "netAmount": 0.02049999,
+      "absoluteVolume": 0.02049999,
+      "usdPrice": 95.48190170183675,
+      "priceChange24h": 0.43691148055582973,
+      "priceBlockId": 419256885,
+      "lastObservedAt": "2026-05-11T22:48:06.000Z",
+      "lastSignature": "5gFhNmL4obfTWv1BS6BRs8dZvbh9FW19HvefkyNuXecmQ5z4So184sqDHPGeKeQpJD8gbEMTcGyFZTEPkyEUDahY"
     },
-    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": {
-      "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-      "symbol": "USDC",
-      "name": "USD Coin",
+    "9geqC8GkNVA7vHUybCAtsAQEWmxLxYABKMaaa9uspump": {
+      "mint": "9geqC8GkNVA7vHUybCAtsAQEWmxLxYABKMaaa9uspump",
+      "symbol": "9geq...pump",
+      "name": "Unknown token",
       "decimals": 6,
       "netAmount": 0,
-      "absoluteVolume": 6210.72,
-      "usdPrice": 1,
-      "priceChange24h": 0,
-      "priceBlockId": 348004020,
-      "lastObservedAt": "2026-05-12T10:28:40.000Z",
-      "lastSignature": "5UsdcDemoSignature333333333333333333333333333333333333333"
+      "absoluteVolume": 296059.849612,
+      "usdPrice": 0.000003287518807325616,
+      "priceChange24h": -51.287978427607925,
+      "priceBlockId": 419254266,
+      "lastObservedAt": "2026-05-11T22:37:23.000Z",
+      "lastSignature": "4LFAALc2nYjtRoA6eJy1YTJnEBJRjFGo7qF3UU9X4LP7MaHG41R6ZpsVp6mku9FiyJ5bFSPACqwQtoQFnszuWyD6"
+    },
+    "AFFQyU6EmFUVxeazzowdrdn48TtmeHnYNLPXqgupump": {
+      "mint": "AFFQyU6EmFUVxeazzowdrdn48TtmeHnYNLPXqgupump",
+      "symbol": "AFFQ...pump",
+      "name": "Unknown token",
+      "decimals": 6,
+      "netAmount": 2e-8,
+      "absoluteVolume": 31136.60685398,
+      "usdPrice": 0.000002744595912723512,
+      "priceChange24h": -61.354856020161506,
+      "priceBlockId": 419256881,
+      "lastObservedAt": "2026-05-11T22:48:06.000Z",
+      "lastSignature": "5gFhNmL4obfTWv1BS6BRs8dZvbh9FW19HvefkyNuXecmQ5z4So184sqDHPGeKeQpJD8gbEMTcGyFZTEPkyEUDahY"
     }
   },
   "events": [
     {
-      "id": "4M9xDemoRouteSignature111111111111111111111111111111111111111",
-      "signature": "4M9xDemoRouteSignature111111111111111111111111111111111111111",
-      "slot": 348004035,
-      "timestamp": "2026-05-12T10:32:11.000Z",
-      "type": "token_to_designated",
+      "id": "5gFhNmL4obfTWv1BS6BRs8dZvbh9FW19HvefkyNuXecmQ5z4So184sqDHPGeKeQpJD8gbEMTcGyFZTEPkyEUDahY",
+      "signature": "5gFhNmL4obfTWv1BS6BRs8dZvbh9FW19HvefkyNuXecmQ5z4So184sqDHPGeKeQpJD8gbEMTcGyFZTEPkyEUDahY",
+      "slot": 419132395,
+      "timestamp": "2026-05-11T22:48:06.000Z",
+      "type": "wallet_activity",
       "status": "confirmed",
-      "feeSol": 0.000005,
-      "accountCount": 17,
-      "instructionCount": 5,
+      "feeSol": 0.000075115,
+      "accountCount": 31,
+      "instructionCount": 7,
       "watchedTouches": [
-        "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
         "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6"
       ],
-      "routedTransfers": [
-        {
-          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
-          "from": "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
-          "to": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
-          "amount": 8400,
-          "decimals": 6
-        }
-      ],
+      "routedTransfers": [],
       "transfers": [
         {
-          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
-          "from": "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
+          "mint": "AFFQyU6EmFUVxeazzowdrdn48TtmeHnYNLPXqgupump",
+          "from": "eFNjQm47KDyBSrfxjs257cHdpE2QAayXZRJNjxtJiCK",
           "to": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
-          "amount": 8400,
+          "amount": 15568.303426980972,
           "decimals": 6
         }
       ],
       "involvedWallets": [
         {
-          "address": "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
-          "label": "Hermes watched source",
-          "role": "source"
+          "address": "924ehmC4cfj3SB7GrxqpBNkB5DEnGWCX4kotoHy63VhM",
+          "label": "924ehmC4cfj3SB7GrxqpBNkB5DEnGWCX4kotoHy63VhM",
+          "role": "observed"
+        },
+        {
+          "address": "7VtfL8fvgNfhz17qKRMjzQEXgbdpnHHHQRh54R9jP2RJ",
+          "label": "7VtfL8fvgNfhz17qKRMjzQEXgbdpnHHHQRh54R9jP2RJ",
+          "role": "observed"
+        },
+        {
+          "address": "eFNjQm47KDyBSrfxjs257cHdpE2QAayXZRJNjxtJiCK",
+          "label": "eFNjQm47KDyBSrfxjs257cHdpE2QAayXZRJNjxtJiCK",
+          "role": "observed"
+        },
+        {
+          "address": "GXPFM2caqTtQYC2cJ5yJRi9VDkpsYZXzYdwYpGnLmtDL",
+          "label": "GXPFM2caqTtQYC2cJ5yJRi9VDkpsYZXzYdwYpGnLmtDL",
+          "role": "observed"
+        },
+        {
+          "address": "GP8StUXNYSZjPikyRsvkTbvRV1GBxMErb59cpeCJnDf1",
+          "label": "GP8StUXNYSZjPikyRsvkTbvRV1GBxMErb59cpeCJnDf1",
+          "role": "observed"
         },
         {
           "address": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
           "label": "Designated destination",
           "role": "destination"
+        },
+        {
+          "address": "25mtHq2t5iesuKEMBd3hQtkJ61TjJjYGKZDY99RoYZjV",
+          "label": "25mtHq2t5iesuKEMBd3hQtkJ61TjJjYGKZDY99RoYZjV",
+          "role": "observed"
+        },
+        {
+          "address": "3BA5QNW4SESCrzZCQFnwZ9VvfaXwqqwK7MjA2Jhp1LpC",
+          "label": "3BA5QNW4SESCrzZCQFnwZ9VvfaXwqqwK7MjA2Jhp1LpC",
+          "role": "observed"
+        },
+        {
+          "address": "7GFUN3bWzJMKMRZ34JLsvcqdssDbXnp589SiE33KVwcC",
+          "label": "7GFUN3bWzJMKMRZ34JLsvcqdssDbXnp589SiE33KVwcC",
+          "role": "observed"
+        },
+        {
+          "address": "Acbw6tSNu2keg1dgPDLbUYeaZiCt1AdAyrRngwMofUr8",
+          "label": "Acbw6tSNu2keg1dgPDLbUYeaZiCt1AdAyrRngwMofUr8",
+          "role": "observed"
+        },
+        {
+          "address": "AktftA98kSWAxn6kVSoqBXBELUArjKu2H9WmKB48ULFY",
+          "label": "AktftA98kSWAxn6kVSoqBXBELUArjKu2H9WmKB48ULFY",
+          "role": "observed"
+        },
+        {
+          "address": "GyY4VgEpJQhiKZRAJJmoM4hv5Q2xC4pvX68MGrGidxyG",
+          "label": "GyY4VgEpJQhiKZRAJJmoM4hv5Q2xC4pvX68MGrGidxyG",
+          "role": "observed"
         }
       ],
       "tokens": {
-        "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN": {
-          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
-          "symbol": "JUP",
-          "name": "Jupiter",
+        "So11111111111111111111111111111111111111112": {
+          "mint": "So11111111111111111111111111111111111111112",
+          "symbol": "SOL",
+          "name": "Wrapped SOL",
+          "decimals": 9,
+          "usdPrice": 95.48190170183675,
+          "priceChange24h": 0.43691148055582973,
+          "priceBlockId": 419256885
+        },
+        "AFFQyU6EmFUVxeazzowdrdn48TtmeHnYNLPXqgupump": {
+          "mint": "AFFQyU6EmFUVxeazzowdrdn48TtmeHnYNLPXqgupump",
+          "symbol": "AFFQ...pump",
+          "name": "Unknown token",
           "decimals": 6,
-          "usdPrice": 0.396423,
-          "priceChange24h": 0.52,
-          "priceBlockId": 348004026
+          "usdPrice": 0.000002744595912723512,
+          "priceChange24h": -61.354856020161506,
+          "priceBlockId": 419256881
         }
       }
+    },
+    {
+      "id": "4LFAALc2nYjtRoA6eJy1YTJnEBJRjFGo7qF3UU9X4LP7MaHG41R6ZpsVp6mku9FiyJ5bFSPACqwQtoQFnszuWyD6",
+      "signature": "4LFAALc2nYjtRoA6eJy1YTJnEBJRjFGo7qF3UU9X4LP7MaHG41R6ZpsVp6mku9FiyJ5bFSPACqwQtoQFnszuWyD6",
+      "slot": 419130805,
+      "timestamp": "2026-05-11T22:37:23.000Z",
+      "type": "wallet_activity",
+      "status": "confirmed",
+      "feeSol": 0.001421546,
+      "accountCount": 32,
+      "instructionCount": 7,
+      "watchedTouches": [
+        "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6"
+      ],
+      "routedTransfers": [],
+      "transfers": [
+        {
+          "mint": "9geqC8GkNVA7vHUybCAtsAQEWmxLxYABKMaaa9uspump",
+          "from": "78wSYbXvREWu78D814FQBkymcrpTdMxvd7wavsLDwt4Y",
+          "to": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
+          "amount": 148029.9248059988,
+          "decimals": 6
+        }
+      ],
+      "involvedWallets": [
+        {
+          "address": "7KUPnbQabcF8wsuNwEjjP6mScemy8csQC6U255jEL3TM",
+          "label": "7KUPnbQabcF8wsuNwEjjP6mScemy8csQC6U255jEL3TM",
+          "role": "observed"
+        },
+        {
+          "address": "FWsW1xNtWscwNmKv6wVsU1iTzRN6wmmk3MjxRP5tT7hz",
+          "label": "FWsW1xNtWscwNmKv6wVsU1iTzRN6wmmk3MjxRP5tT7hz",
+          "role": "observed"
+        },
+        {
+          "address": "3CgvbiM3op4vjrrjH2zcrQUwsqh5veNVRjFCB9N6sRoD",
+          "label": "3CgvbiM3op4vjrrjH2zcrQUwsqh5veNVRjFCB9N6sRoD",
+          "role": "observed"
+        },
+        {
+          "address": "78wSYbXvREWu78D814FQBkymcrpTdMxvd7wavsLDwt4Y",
+          "label": "78wSYbXvREWu78D814FQBkymcrpTdMxvd7wavsLDwt4Y",
+          "role": "observed"
+        },
+        {
+          "address": "5cjcW9wExnJJiqgLjq7DEG75Pm6JBgE1hNv4B2vHXUW6",
+          "label": "5cjcW9wExnJJiqgLjq7DEG75Pm6JBgE1hNv4B2vHXUW6",
+          "role": "observed"
+        },
+        {
+          "address": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
+          "label": "Designated destination",
+          "role": "destination"
+        },
+        {
+          "address": "3GQvMdyh4bfbEam5i5CCui1mFsxLPomwvSeZm5H4AuqH",
+          "label": "3GQvMdyh4bfbEam5i5CCui1mFsxLPomwvSeZm5H4AuqH",
+          "role": "observed"
+        },
+        {
+          "address": "7xQYoUjUJF1Kg6WVczoTAkaNhn5syQYcbvjmFrhjWpx",
+          "label": "7xQYoUjUJF1Kg6WVczoTAkaNhn5syQYcbvjmFrhjWpx",
+          "role": "observed"
+        },
+        {
+          "address": "HABjaSq1M3Dg7uJjzaLcJgeMDp6TSwyVqy7yPPPvwcav",
+          "label": "HABjaSq1M3Dg7uJjzaLcJgeMDp6TSwyVqy7yPPPvwcav",
+          "role": "observed"
+        },
+        {
+          "address": "39FWQJxqTmUkFqHKjEs3CawQ1b1rqLcKmHfJ1FWMAWdu",
+          "label": "39FWQJxqTmUkFqHKjEs3CawQ1b1rqLcKmHfJ1FWMAWdu",
+          "role": "observed"
+        },
+        {
+          "address": "BnbCRhi3uNZT7cfW6qkJLXyDiQH3g31pgqzvPYaP5LmW",
+          "label": "BnbCRhi3uNZT7cfW6qkJLXyDiQH3g31pgqzvPYaP5LmW",
+          "role": "observed"
+        },
+        {
+          "address": "GYH1Gae1wJytMSvMvw8JVcv7nuAbxi8i9erNVbERnzXd",
+          "label": "GYH1Gae1wJytMSvMvw8JVcv7nuAbxi8i9erNVbERnzXd",
+          "role": "observed"
+        }
+      ],
+      "tokens": {
+        "So11111111111111111111111111111111111111112": {
+          "mint": "So11111111111111111111111111111111111111112",
+          "symbol": "SOL",
+          "name": "Wrapped SOL",
+          "decimals": 9,
+          "usdPrice": 95.48190170183675,
+          "priceChange24h": 0.43691148055582973,
+          "priceBlockId": 419256885
+        },
+        "9geqC8GkNVA7vHUybCAtsAQEWmxLxYABKMaaa9uspump": {
+          "mint": "9geqC8GkNVA7vHUybCAtsAQEWmxLxYABKMaaa9uspump",
+          "symbol": "9geq...pump",
+          "name": "Unknown token",
+          "decimals": 6,
+          "usdPrice": 0.000003287518807325616,
+          "priceChange24h": -51.287978427607925,
+          "priceBlockId": 419254266
+        }
+      }
+    },
+    {
+      "id": "TQNaiPV2PhbH1yDSsX6jAqEBVEXvGMQKR8SEsXDd3YQrg9u2jGn8aubwvUnj2smqaSfceKYyY12PBimQELeNUzM",
+      "signature": "TQNaiPV2PhbH1yDSsX6jAqEBVEXvGMQKR8SEsXDd3YQrg9u2jGn8aubwvUnj2smqaSfceKYyY12PBimQELeNUzM",
+      "slot": 419177631,
+      "timestamp": "2026-05-12T03:51:21.000Z",
+      "type": "wallet_activity",
+      "status": "confirmed",
+      "feeSol": 0.00000505,
+      "accountCount": 4,
+      "instructionCount": 3,
+      "watchedTouches": [
+        "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b"
+      ],
+      "routedTransfers": [],
+      "transfers": [],
+      "involvedWallets": [
+        {
+          "address": "DW11A3YyjJ7MHQphnunbHMnCstehY3LdbJmVnwMTLtwv",
+          "label": "DW11A3YyjJ7MHQphnunbHMnCstehY3LdbJmVnwMTLtwv",
+          "role": "observed"
+        },
+        {
+          "address": "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
+          "label": "Hermes watched source",
+          "role": "source"
+        }
+      ],
+      "tokens": {}
+    },
+    {
+      "id": "2bUBnHp8jbmbbJgF2qWe3VkpTvCgJoHAQdMuBo6VS4UBhtAetvVVtCTEXD1GkDVbTRUCVKfzvRi1cQknUPA3FtJR",
+      "signature": "2bUBnHp8jbmbbJgF2qWe3VkpTvCgJoHAQdMuBo6VS4UBhtAetvVVtCTEXD1GkDVbTRUCVKfzvRi1cQknUPA3FtJR",
+      "slot": 419177471,
+      "timestamp": "2026-05-12T03:50:19.000Z",
+      "type": "wallet_activity",
+      "status": "confirmed",
+      "feeSol": 0.00000505,
+      "accountCount": 4,
+      "instructionCount": 3,
+      "watchedTouches": [
+        "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b"
+      ],
+      "routedTransfers": [],
+      "transfers": [],
+      "involvedWallets": [
+        {
+          "address": "DWUCPCnnES9AB6HbTgG8rpFGqUXvuebnbrBuNav2Etwv",
+          "label": "DWUCPCnnES9AB6HbTgG8rpFGqUXvuebnbrBuNav2Etwv",
+          "role": "observed"
+        },
+        {
+          "address": "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
+          "label": "Hermes watched source",
+          "role": "source"
+        }
+      ],
+      "tokens": {}
+    },
+    {
+      "id": "49fy7RNRkJ5iGWeJ3r6XALDxjVx6kK7hqsUwQaFDaugdnysXDhB5QEw27tHtzdaCnUFzfMXrWKVkUejXVpiGwnqT",
+      "signature": "49fy7RNRkJ5iGWeJ3r6XALDxjVx6kK7hqsUwQaFDaugdnysXDhB5QEw27tHtzdaCnUFzfMXrWKVkUejXVpiGwnqT",
+      "slot": 419237162,
+      "timestamp": "2026-05-12T10:29:32.000Z",
+      "type": "wallet_activity",
+      "status": "confirmed",
+      "feeSol": 0.00000505,
+      "accountCount": 4,
+      "instructionCount": 3,
+      "watchedTouches": [
+        "2oVttN9jEjLnLvWs7oHW4x9MxXK52X9hcPRkhqWKm5MF"
+      ],
+      "routedTransfers": [],
+      "transfers": [],
+      "involvedWallets": [
+        {
+          "address": "J61CuKipaubJVrGgtNfgz9u4vnV5oUqy3SetsB1DiJaS",
+          "label": "J61CuKipaubJVrGgtNfgz9u4vnV5oUqy3SetsB1DiJaS",
+          "role": "observed"
+        },
+        {
+          "address": "2oVttN9jEjLnLvWs7oHW4x9MxXK52X9hcPRkhqWKm5MF",
+          "label": "Hermes trading wallet",
+          "role": "execution"
+        }
+      ],
+      "tokens": {}
+    },
+    {
+      "id": "3yZBgPZ5qhNiMTm9kyCH4A2m4eKzrsDErCvBARktXurdDQvSRziunefL4Kt5SYQ6CShBz5L2ZdPV4RYYBX9FRLAx",
+      "signature": "3yZBgPZ5qhNiMTm9kyCH4A2m4eKzrsDErCvBARktXurdDQvSRziunefL4Kt5SYQ6CShBz5L2ZdPV4RYYBX9FRLAx",
+      "slot": 419237128,
+      "timestamp": "2026-05-12T10:29:17.000Z",
+      "type": "wallet_activity",
+      "status": "confirmed",
+      "feeSol": 0.00000505,
+      "accountCount": 4,
+      "instructionCount": 3,
+      "watchedTouches": [
+        "2oVttN9jEjLnLvWs7oHW4x9MxXK52X9hcPRkhqWKm5MF"
+      ],
+      "routedTransfers": [],
+      "transfers": [],
+      "involvedWallets": [
+        {
+          "address": "J61CGf5UEWVYvqtkejcnVrEzggbQpEeevVFpm6LEQJaS",
+          "label": "J61CGf5UEWVYvqtkejcnVrEzggbQpEeevVFpm6LEQJaS",
+          "role": "observed"
+        },
+        {
+          "address": "2oVttN9jEjLnLvWs7oHW4x9MxXK52X9hcPRkhqWKm5MF",
+          "label": "Hermes trading wallet",
+          "role": "execution"
+        }
+      ],
+      "tokens": {}
     }
   ],
   "stats": {
-    "totalEvents": 1,
-    "routedEvents": 1,
-    "walletsObserved": 2,
+    "totalEvents": 6,
+    "routedEvents": 0,
+    "walletsObserved": 29,
     "tokensObserved": 3,
-    "estimatedPnlUsd": 2757.07
+    "estimatedPnlUsd": -9.6e-7
   },
   "config": {
     "profileName": "Hermes G2hak Copy-Trade Watch",
@@ -169,12 +827,24 @@
         "address": "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
         "role": "source",
         "weight": 1
+      },
+      {
+        "label": "Hermes trading wallet",
+        "address": "2oVttN9jEjLnLvWs7oHW4x9MxXK52X9hcPRkhqWKm5MF",
+        "role": "execution",
+        "weight": 1
       }
     ],
     "metadata": {
       "operator": "Clawberto",
       "strategy": "Hermes observed token routing",
-      "notes": "Sample snapshot. Run the watcher to replace it with live data."
+      "trigger": "new copytradable SPL buy by watched source wallet",
+      "minimumSourceBuyUsd": 500,
+      "mirrorBuyUsd": 1,
+      "slippageBps": 1500,
+      "priorityFeeLamportsMax": 100000,
+      "maxEventsPerRun": 5,
+      "notes": "Copy this file to config/wallets.json and adjust only if the active Hermes rail changes."
     }
   }
 }
