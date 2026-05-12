@@ -9,6 +9,9 @@ const els = {
   workflowDestination: document.querySelector("#workflow-destination"),
   workflowLedger: document.querySelector("#workflow-ledger"),
   focusSymbol: document.querySelector("#focus-symbol"),
+  focusAvatar: document.querySelector("#focus-avatar"),
+  focusTokenName: document.querySelector("#focus-token-name"),
+  focusTokenSubtitle: document.querySelector("#focus-token-subtitle"),
   focusCa: document.querySelector("#focus-ca"),
   focusCopy: document.querySelector("#focus-copy"),
   focusMeta: document.querySelector("#focus-meta"),
@@ -89,7 +92,7 @@ function railItem(label, value) {
   return `
     <div class="rail-item">
       <span>${escapeHtml(label)}</span>
-      <strong>${value ?? "-"}</strong>
+      <div class="rail-value">${value ?? "-"}</div>
     </div>
   `;
 }
@@ -98,6 +101,10 @@ function renderFocus() {
   const token = selectedMint ? snapshot.tokens?.[selectedMint] : null;
   if (!token) {
     els.focusSymbol.textContent = "No token";
+    els.focusAvatar.className = "token-avatar token-avatar-empty";
+    els.focusAvatar.textContent = "";
+    els.focusTokenName.textContent = "Select a token";
+    els.focusTokenSubtitle.textContent = "Ticker and memecoin image appear here";
     els.focusCa.textContent = "Select a token row";
     els.focusCopy.disabled = true;
     els.focusMeta.innerHTML = "";
@@ -105,16 +112,17 @@ function renderFocus() {
     return;
   }
 
-  els.focusSymbol.textContent = `${token.symbol ?? "Token"} / ${token.name ?? "Unknown"}`;
+  els.focusSymbol.textContent = token.symbol ?? shortAddress(token.mint);
+  els.focusAvatar.outerHTML = tokenAvatar(token, true);
+  els.focusAvatar = document.querySelector("#focus-avatar");
+  els.focusTokenName.textContent = token.name ?? "Unknown token";
+  els.focusTokenSubtitle.textContent = `${token.symbol ?? "Token"} / ${shortAddress(token.mint)}`;
   els.focusCa.textContent = token.mint;
   els.focusCopy.disabled = false;
   els.focusCopy.dataset.copy = token.mint;
   els.workflowToken.textContent = `${token.symbol ?? shortAddress(token.mint)} active`;
   els.focusMeta.innerHTML = metadataList([
     ["Price", token.usdPrice == null ? "Unavailable" : usd(token.usdPrice)],
-    ["24h", percent(token.priceChange24h)],
-    ["Decimals", token.decimals ?? "-"],
-    ["Price block", token.priceBlockId ?? "-"],
     ["Volume", amount(token.absoluteVolume)],
     ["Last seen", token.lastObservedAt ? formatDate(token.lastObservedAt) : "-"]
   ]);
@@ -136,7 +144,7 @@ function renderRoutes() {
     return `
       <tr>
         <td>${escapeHtml(event.timestamp ? formatDate(event.timestamp) : "-")}</td>
-        <td><strong>${escapeHtml(token.symbol ?? shortAddress(transfer.mint))}</strong><br><span class="badge">${escapeHtml(token.name ?? "Unknown")}</span></td>
+        <td>${tokenCell({ ...token, mint: transfer.mint }, event)}</td>
         <td>${caCell(transfer.mint)}</td>
         <td>${amount(transfer.amount)}</td>
         <td>${addressCell(transfer.from)}</td>
@@ -168,13 +176,12 @@ function renderTokens() {
 
   els.tokensBody.innerHTML = tokens.length ? tokens.map((token) => `
     <tr data-mint="${escapeAttr(token.mint)}">
-      <td><strong>${escapeHtml(token.symbol ?? "Token")}</strong><br><span class="badge">${escapeHtml(token.name ?? "Unknown")}</span></td>
+      <td>${tokenCell(token)}</td>
       <td>${caCell(token.mint)}</td>
       <td>${token.usdPrice == null ? "Unavailable" : usd(token.usdPrice)}<br><span class="${moneyClass(token.priceChange24h)}">${percent(token.priceChange24h)}</span></td>
       <td>${amount(token.absoluteVolume)}</td>
-      <td>${escapeHtml(token.priceBlockId ?? "-")}</td>
     </tr>
-  `).join("") : emptyRow(5);
+  `).join("") : emptyRow(4);
 }
 
 function renderEvents() {
@@ -201,10 +208,51 @@ function metadataList(items) {
   `).join("");
 }
 
+function tokenCell(token, event = null) {
+  const symbol = token.symbol ?? shortAddress(token.mint);
+  const name = token.name && token.name !== "Unknown token" ? token.name : "Memecoin";
+  return `
+    <div class="token-cell">
+      ${tokenAvatar(token)}
+      <div class="token-copy">
+        <strong>${escapeHtml(symbol)}</strong>
+        <span>${escapeHtml(name)}</span>
+        <div class="hover-meta" aria-label="Token metadata">
+          ${metaLine("CA", token.mint)}
+          ${metaLine("Decimals", token.decimals ?? "-")}
+          ${metaLine("Price block", token.priceBlockId ?? "-")}
+          ${metaLine("Last seen", token.lastObservedAt ? formatDate(token.lastObservedAt) : event?.timestamp ? formatDate(event.timestamp) : "-")}
+          ${metaLine("Last signature", token.lastSignature ?? event?.signature ?? "-")}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function tokenAvatar(token, isFocus = false) {
+  const symbol = token.symbol ?? shortAddress(token.mint);
+  const label = symbol.replace(/[^a-z0-9]/gi, "").slice(0, 2).toUpperCase() || "CA";
+  const image = token.image || token.logoURI || token.icon;
+  const className = `token-avatar avatar-${hashCode(token.mint ?? symbol) % 8}`;
+  if (image) {
+    return `<img ${isFocus ? 'id="focus-avatar"' : ""} class="${className}" src="${escapeAttr(image)}" alt="${escapeAttr(symbol)} token image" loading="lazy">`;
+  }
+  return `<span ${isFocus ? 'id="focus-avatar"' : ""} class="${className}" aria-hidden="true">${escapeHtml(label)}</span>`;
+}
+
+function metaLine(label, value) {
+  return `
+    <span>
+      <em>${escapeHtml(label)}</em>
+      <code>${escapeHtml(value)}</code>
+    </span>
+  `;
+}
+
 function caCell(value) {
   return `
     <div class="mono-cell">
-      <code>${escapeHtml(value)}</code>
+      <code title="${escapeAttr(value)}">${escapeHtml(shortAddress(value))}</code>
       <button class="small-button" type="button" data-copy="${escapeAttr(value)}">Copy</button>
     </div>
   `;
@@ -305,6 +353,15 @@ function escapeHtml(value) {
 
 function escapeAttr(value) {
   return escapeHtml(value);
+}
+
+function hashCode(value) {
+  const text = String(value ?? "");
+  let hash = 0;
+  for (let index = 0; index < text.length; index += 1) {
+    hash = (hash * 31 + text.charCodeAt(index)) >>> 0;
+  }
+  return hash;
 }
 
 document.addEventListener("click", (event) => {

@@ -39,6 +39,7 @@ export function tokenMetadata(mint, config, prices = {}) {
     mint,
     symbol: configured.symbol ?? (isSol ? "SOL" : shortMint(mint)),
     name: configured.name ?? (isSol ? "Wrapped SOL" : "Unknown token"),
+    image: configured.image ?? configured.logoURI ?? configured.icon ?? priced.image ?? priced.logoURI ?? priced.icon ?? null,
     decimals: configured.decimals ?? priced.decimals ?? null,
     usdPrice: priced.usdPrice ?? null,
     priceChange24h: priced.priceChange24h ?? null,

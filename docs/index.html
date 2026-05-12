@@ -85,8 +85,17 @@
 
         <aside class="ca-panel">
           <div class="section-heading">
-            <p class="eyebrow">Selected CA</p>
-            <h2 id="focus-symbol">No token</h2>
+            <div>
+              <p class="eyebrow">Selected CA</p>
+              <h2 id="focus-symbol">No token</h2>
+            </div>
+          </div>
+          <div class="focus-token">
+            <div id="focus-avatar" class="token-avatar token-avatar-empty" aria-hidden="true"></div>
+            <div>
+              <strong id="focus-token-name">Select a token</strong>
+              <span id="focus-token-subtitle">Ticker and memecoin image appear here</span>
+            </div>
           </div>
           <div class="ca-box">
             <code id="focus-ca">Select a token row</code>
@@ -122,7 +131,7 @@
                 <th>Amount</th>
                 <th>From</th>
                 <th>To</th>
-                <th>Metadata</th>
+                <th>Tx</th>
               </tr>
             </thead>
             <tbody id="routes-body"></tbody>
@@ -137,7 +146,7 @@
             <h2>Observed ledger</h2>
           </div>
           <div class="table-wrap">
-            <table>
+            <table class="wallet-table">
               <thead>
                 <tr>
                   <th>Label</th>
@@ -158,14 +167,13 @@
             <h2>Core metadata</h2>
           </div>
           <div class="table-wrap">
-            <table>
+            <table class="token-table">
               <thead>
                 <tr>
                   <th>Token</th>
                   <th>CA</th>
                   <th>Price</th>
                   <th>Volume</th>
-                  <th>Block</th>
                 </tr>
               </thead>
               <tbody id="tokens-body"></tbody>

@@ -108,6 +108,7 @@ function ensureToken(state, meta) {
     mint: meta.mint,
     symbol: meta.symbol,
     name: meta.name,
+    image: meta.image,
     decimals: meta.decimals,
     netAmount: 0,
     absoluteVolume: 0,
@@ -117,13 +118,15 @@ function ensureToken(state, meta) {
     lastObservedAt: null,
     lastSignature: null
   };
+  if (meta.image && !state.tokens[meta.mint].image) state.tokens[meta.mint].image = meta.image;
 }
 
 function ensurePosition(wallet, meta) {
   wallet.positions[meta.mint] ??= {
     mint: meta.mint,
     symbol: meta.symbol,
-    name: meta.name,
+      name: meta.name,
+      image: meta.image,
     quantity: 0,
     costBasisUsd: 0,
     realizedPnlUsd: 0,
