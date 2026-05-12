@@ -1,0 +1,32 @@
+{
+  "profileName": "Hermes Copy-Trade Watch",
+  "network": "mainnet-beta",
+  "rpcUrl": "https://api.mainnet-beta.solana.com",
+  "priceUrl": "https://lite-api.jup.ag/price/v3",
+  "designatedAddress": "11111111111111111111111111111111",
+  "wallets": [
+    {
+      "label": "Hermes Primary",
+      "address": "11111111111111111111111111111111",
+      "role": "source",
+      "weight": 1
+    }
+  ],
+  "tokens": {
+    "So11111111111111111111111111111111111111112": {
+      "symbol": "SOL",
+      "name": "Wrapped SOL",
+      "decimals": 9
+    },
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": {
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "decimals": 6
+    }
+  },
+  "metadata": {
+    "operator": "Clawberto",
+    "strategy": "Hermes observed token routing",
+    "notes": "Copy this file to config/wallets.json and replace the Hermes and destination addresses before running live scans."
+  }
+}

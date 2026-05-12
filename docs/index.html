@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clawberto CopyTrading</title>
+    <meta name="description" content="Hermes wallet routing terminal and copy-trade dashboard.">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="mark" aria-hidden="true"></span>
+        <div>
+          <p class="eyebrow">Clawberto</p>
+          <h1>Hermes Flow Terminal</h1>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <span id="last-updated" class="status-pill">Loading</span>
+        <a class="ghost-button" href="https://github.com/ael-dev3/Clawberto-CopyTrading">GitHub</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="metric-grid" aria-label="Portfolio summary">
+        <article class="metric">
+          <span>Estimated PnL</span>
+          <strong id="metric-pnl">$0.00</strong>
+        </article>
+        <article class="metric">
+          <span>Wallets</span>
+          <strong id="metric-wallets">0</strong>
+        </article>
+        <article class="metric">
+          <span>Tokens</span>
+          <strong id="metric-tokens">0</strong>
+        </article>
+        <article class="metric">
+          <span>Routed Events</span>
+          <strong id="metric-routed">0</strong>
+        </article>
+      </section>
+
+      <section class="focus-grid">
+        <div class="workflow-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Routing Workflow</p>
+            <h2>Live wallet path</h2>
+          </div>
+          <div class="workflow" aria-label="Animated routing workflow">
+            <div class="workflow-node">
+              <span class="node-kicker">01</span>
+              <strong>Hermes wallets</strong>
+              <small id="workflow-source">0 watched</small>
+            </div>
+            <div class="workflow-track">
+              <span class="packet packet-a"></span>
+              <span class="packet packet-b"></span>
+            </div>
+            <div class="workflow-node">
+              <span class="node-kicker">02</span>
+              <strong>Token route</strong>
+              <small id="workflow-token">No CA selected</small>
+            </div>
+            <div class="workflow-track">
+              <span class="packet packet-c"></span>
+              <span class="packet packet-d"></span>
+            </div>
+            <div class="workflow-node">
+              <span class="node-kicker">03</span>
+              <strong>Destination</strong>
+              <small id="workflow-destination">-</small>
+            </div>
+            <div class="workflow-track">
+              <span class="packet packet-e"></span>
+            </div>
+            <div class="workflow-node">
+              <span class="node-kicker">04</span>
+              <strong>PnL ledger</strong>
+              <small id="workflow-ledger">$0.00</small>
+            </div>
+          </div>
+        </div>
+
+        <aside class="ca-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Selected CA</p>
+            <h2 id="focus-symbol">No token</h2>
+          </div>
+          <div class="ca-box">
+            <code id="focus-ca">Select a token row</code>
+            <button class="copy-button" id="focus-copy" type="button" disabled>Copy</button>
+          </div>
+          <dl class="metadata-list" id="focus-meta"></dl>
+        </aside>
+      </section>
+
+      <section class="data-section">
+        <div class="section-heading">
+          <p class="eyebrow">Token Sends</p>
+          <h2>Routed into destination</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Token</th>
+                <th>CA</th>
+                <th>Amount</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Metadata</th>
+              </tr>
+            </thead>
+            <tbody id="routes-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="split-section">
+        <div class="data-section">
+          <div class="section-heading">
+            <p class="eyebrow">Wallets</p>
+            <h2>Observed ledger</h2>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Label</th>
+                  <th>Role</th>
+                  <th>Address</th>
+                  <th>Value</th>
+                  <th>PnL</th>
+                </tr>
+              </thead>
+              <tbody id="wallets-body"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="data-section">
+          <div class="section-heading">
+            <p class="eyebrow">Tokens</p>
+            <h2>Core metadata</h2>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Token</th>
+                  <th>CA</th>
+                  <th>Price</th>
+                  <th>Volume</th>
+                  <th>Block</th>
+                </tr>
+              </thead>
+              <tbody id="tokens-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="data-section">
+        <div class="section-heading">
+          <p class="eyebrow">Transactions</p>
+          <h2>Recent event stream</h2>
+        </div>
+        <div id="event-stream" class="event-stream"></div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="assets/app.js" type="module"></script>
+  </body>
+</html>

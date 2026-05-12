@@ -1,0 +1,19 @@
+{
+  "name": "clawberto-copytrading",
+  "version": "0.1.0",
+  "description": "Hermes wallet copy-trade watcher with terminal PnL estimation and a GitHub Pages dashboard.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "clawberto-watch": "./src/cli/watch.js"
+  },
+  "scripts": {
+    "watch": "node src/cli/watch.js",
+    "snapshot": "node src/cli/watch.js --once",
+    "build": "node scripts/build-site.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

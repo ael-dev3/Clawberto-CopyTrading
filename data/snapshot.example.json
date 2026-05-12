@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "profileName": "Hermes Copy-Trade Watch",
+  "network": "mainnet-beta",
+  "designatedAddress": "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ",
+  "generatedAt": "2026-05-12T10:40:00.000Z",
+  "processedSignatures": [
+    "4M9xDemoRouteSignature111111111111111111111111111111111111111"
+  ],
+  "wallets": {
+    "H3rm3s1111111111111111111111111111111111111": {
+      "address": "H3rm3s1111111111111111111111111111111111111",
+      "label": "Hermes Primary",
+      "role": "source",
+      "currentValueUsd": 28412.44,
+      "estimatedPnlUsd": 2148.33,
+      "positions": {
+        "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN": {
+          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+          "symbol": "JUP",
+          "name": "Jupiter",
+          "quantity": 42800,
+          "costBasisUsd": 15224.4,
+          "realizedPnlUsd": 411.2,
+          "unrealizedPnlUsd": 1742.52,
+          "totalPnlUsd": 2153.72,
+          "valueUsd": 16966.92,
+          "usdPrice": 0.396423,
+          "lastPriceBlockId": 348004026
+        }
+      }
+    },
+    "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ": {
+      "address": "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ",
+      "label": "Designated destination",
+      "role": "destination",
+      "currentValueUsd": 8421.16,
+      "estimatedPnlUsd": 608.74,
+      "positions": {
+        "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN": {
+          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+          "symbol": "JUP",
+          "name": "Jupiter",
+          "quantity": 8400,
+          "costBasisUsd": 2720.2,
+          "realizedPnlUsd": 122.14,
+          "unrealizedPnlUsd": 608.74,
+          "totalPnlUsd": 730.88,
+          "valueUsd": 3329.35,
+          "usdPrice": 0.396423,
+          "lastPriceBlockId": 348004026
+        }
+      }
+    }
+  },
+  "tokens": {
+    "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN": {
+      "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+      "symbol": "JUP",
+      "name": "Jupiter",
+      "decimals": 6,
+      "netAmount": 0,
+      "absoluteVolume": 16800,
+      "usdPrice": 0.396423,
+      "priceChange24h": 0.52,
+      "priceBlockId": 348004026,
+      "lastObservedAt": "2026-05-12T10:32:11.000Z",
+      "lastSignature": "4M9xDemoRouteSignature111111111111111111111111111111111111111"
+    },
+    "So11111111111111111111111111111111111111112": {
+      "mint": "So11111111111111111111111111111111111111112",
+      "symbol": "SOL",
+      "name": "Wrapped SOL",
+      "decimals": 9,
+      "netAmount": 0,
+      "absoluteVolume": 42.16,
+      "usdPrice": 147.48,
+      "priceChange24h": 1.29,
+      "priceBlockId": 348004023,
+      "lastObservedAt": "2026-05-12T10:30:18.000Z",
+      "lastSignature": "3SolDemoSignature22222222222222222222222222222222222222222"
+    },
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": {
+      "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "decimals": 6,
+      "netAmount": 0,
+      "absoluteVolume": 6210.72,
+      "usdPrice": 1,
+      "priceChange24h": 0,
+      "priceBlockId": 348004020,
+      "lastObservedAt": "2026-05-12T10:28:40.000Z",
+      "lastSignature": "5UsdcDemoSignature333333333333333333333333333333333333333"
+    }
+  },
+  "events": [
+    {
+      "id": "4M9xDemoRouteSignature111111111111111111111111111111111111111",
+      "signature": "4M9xDemoRouteSignature111111111111111111111111111111111111111",
+      "slot": 348004035,
+      "timestamp": "2026-05-12T10:32:11.000Z",
+      "type": "token_to_designated",
+      "status": "confirmed",
+      "feeSol": 0.000005,
+      "accountCount": 17,
+      "instructionCount": 5,
+      "watchedTouches": [
+        "H3rm3s1111111111111111111111111111111111111",
+        "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ"
+      ],
+      "routedTransfers": [
+        {
+          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+          "from": "H3rm3s1111111111111111111111111111111111111",
+          "to": "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ",
+          "amount": 8400,
+          "decimals": 6
+        }
+      ],
+      "transfers": [
+        {
+          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+          "from": "H3rm3s1111111111111111111111111111111111111",
+          "to": "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ",
+          "amount": 8400,
+          "decimals": 6
+        }
+      ],
+      "involvedWallets": [
+        {
+          "address": "H3rm3s1111111111111111111111111111111111111",
+          "label": "Hermes Primary",
+          "role": "source"
+        },
+        {
+          "address": "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ",
+          "label": "Designated destination",
+          "role": "destination"
+        }
+      ],
+      "tokens": {
+        "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN": {
+          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+          "symbol": "JUP",
+          "name": "Jupiter",
+          "decimals": 6,
+          "usdPrice": 0.396423,
+          "priceChange24h": 0.52,
+          "priceBlockId": 348004026
+        }
+      }
+    }
+  ],
+  "stats": {
+    "totalEvents": 1,
+    "routedEvents": 1,
+    "walletsObserved": 2,
+    "tokensObserved": 3,
+    "estimatedPnlUsd": 2757.07
+  },
+  "config": {
+    "profileName": "Hermes Copy-Trade Watch",
+    "network": "mainnet-beta",
+    "designatedAddress": "H3rmDest4x9vQ7sA6mN2pL8kR5cT1yU0bZ9dE4fG7hJ",
+    "wallets": [
+      {
+        "label": "Hermes Primary",
+        "address": "H3rm3s1111111111111111111111111111111111111",
+        "role": "source",
+        "weight": 1
+      }
+    ],
+    "metadata": {
+      "operator": "Clawberto",
+      "strategy": "Hermes observed token routing",
+      "notes": "Sample snapshot. Run the watcher to replace it with live data."
+    }
+  }
+}
