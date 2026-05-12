@@ -1,0 +1,115 @@
+{
+  "snapshot": {
+    "captured_at_local": "2026-05-12T12:31:02+0200",
+    "captured_at_utc": "2026-05-12T10:31:02Z",
+    "readiness": "READY",
+    "manual_probe_status": "NO_ACTION",
+    "security_note": "No private keys or seed material are stored in this repository. The private key remains only in macOS Keychain."
+  },
+  "wallets": {
+    "watched_source_wallet": "G2hakrb8bXncV4fcmYbQLLQujpXcSmQ86CbKchDYgf4b",
+    "trading_wallet": "2oVttN9jEjLnLvWs7oHW4x9MxXK52X9hcPRkhqWKm5MF",
+    "destination_wallet": "GT8time2YjDGmk3ehNjqkUgsQk69QCVMBjpSDjXB9eY6",
+    "keychain": {
+      "service": "Hermes Solana Trading Wallet",
+      "account": "trading-wallet",
+      "derived_pubkey_matches_trading_wallet": true
+    }
+  },
+  "copy_rule": {
+    "chain": "solana-mainnet",
+    "trigger": "new copytradable SPL buy by watched_source_wallet",
+    "minimum_source_buy_usd": 500,
+    "mirror_buy_usd": 1,
+    "buy_input_mint": "So11111111111111111111111111111111111111112",
+    "slippage_bps": 1500,
+    "priority_fee_lamports_max": 100000,
+    "max_events_per_run": 5,
+    "skip_targets": [
+      "WSOL/SOL",
+      "USDC",
+      "USDT",
+      "likely NFT: decimals == 0 && amount == 1"
+    ]
+  },
+  "stable_mints": {
+    "WSOL": "So11111111111111111111111111111111111111112",
+    "USDC": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "USDT": "Es9vMFrzaCERmJfrF4H2FYD4V57LnS3rE7vmYhA64cnC"
+  },
+  "execution": {
+    "rpc_url": "https://api.mainnet-beta.solana.com",
+    "jupiter_quote_urls": [
+      "https://api.jup.ag/swap/v1/quote",
+      "https://lite-api.jup.ag/swap/v1/quote"
+    ],
+    "jupiter_swap_urls": [
+      "https://api.jup.ag/swap/v1/swap",
+      "https://lite-api.jup.ag/swap/v1/swap"
+    ],
+    "post_buy_flow": [
+      "buy same mint with configured mirror_buy_usd",
+      "send all copied output tokens to destination_wallet",
+      "close zero-balance trading-wallet SPL token accounts to reclaim rent"
+    ],
+    "idempotency": {
+      "event_id_format": "<watched_signature>:<mint>",
+      "resume_status": "bought_not_sent",
+      "resume_behavior": "transfer existing token balance without buying again"
+    }
+  },
+  "cron_job": {
+    "job_id": "70df6cc10452",
+    "name": "solana-copytrade-g2hak-500usd-watch",
+    "schedule": "every 1m",
+    "repeat": "forever",
+    "enabled": true,
+    "state": "scheduled",
+    "delivery": "local",
+    "last_run_at": "2026-05-12T12:30:24.744323+02:00",
+    "next_run_at": "2026-05-12T12:31:24.744323+02:00",
+    "last_status": "ok",
+    "last_delivery_error": null,
+    "skills": [
+      "macos-keychain-secrets",
+      "solana-wallet-cleanup"
+    ],
+    "script": "solana_copytrade_cron.py",
+    "script_path": "~/.hermes/scripts/solana_copytrade_cron.py",
+    "executor_path": "~/.hermes/scripts/copytrade_solana_node/copytrade_solana_executor.cjs",
+    "notification_target_on_trade_or_error": "discord:Clawberto Madness / #general / CopyTrading / topic 1503677642551857212"
+  },
+  "live_state": {
+    "state_path": "~/.hermes/state/solana-copytrade-g2hak-state.json",
+    "lock_path": "~/.hermes/state/solana-copytrade-g2hak.lock",
+    "lock_exists": false,
+    "initialized_at": "2026-05-12T09:03:11.110Z",
+    "state_updated_at": "2026-05-12T09:03:11.110Z",
+    "source_latest_signature": "TQNaiPV2PhbH1yDSsX6jAqEBVEXvGMQKR8SEsXDd3YQrg9u2jGn8aubwvUnj2smqaSfceKYyY12PBimQELeNUzM",
+    "state_latest_signature": "TQNaiPV2PhbH1yDSsX6jAqEBVEXvGMQKR8SEsXDd3YQrg9u2jGn8aubwvUnj2smqaSfceKYyY12PBimQELeNUzM",
+    "pending_since_state": false,
+    "processed_signature_count": 0,
+    "event_status_counts": {},
+    "manual_probe": {
+      "status": "NO_ACTION",
+      "latest_signature": "TQNaiPV2PhbH1yDSsX6jAqEBVEXvGMQKR8SEsXDd3YQrg9u2jGn8aubwvUnj2smqaSfceKYyY12PBimQELeNUzM",
+      "newest_seen": "TQNaiPV2PhbH1yDSsX6jAqEBVEXvGMQKR8SEsXDd3YQrg9u2jGn8aubwvUnj2smqaSfceKYyY12PBimQELeNUzM"
+    }
+  },
+  "funding": {
+    "trading_wallet_sol": 1.129857162,
+    "balance_lamports": 1129857162
+  },
+  "readiness_gates": {
+    "cron_enabled": true,
+    "last_cron_status_ok": true,
+    "keychain_pubkey_verified": true,
+    "trading_wallet_funded": true,
+    "state_cursor_matches_source_latest": true,
+    "no_pending_unresolved_events": true,
+    "no_active_lock": true,
+    "executor_exists": true,
+    "wrapper_exists": true,
+    "ready_to_copytrade_future_qualifying_buys": true
+  }
+}
